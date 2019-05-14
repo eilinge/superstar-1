@@ -37,3 +37,12 @@ https://dev.mysql.com/downloads/mysql/5.7.html
 ## 其它参考
 <br/>
 http://2018.sina.com.cn/ballgamestar/
+
+## 添加其他功能
+1. 球员分页(上一页,下一页)
+2. 添加功能
+
+## 性能优化和性能对比
+1. 模板是否支持每次更新检查:bootstarp.go/htmlEngine.Reload(false)
+2. 开启xorm数据缓存:dbhelper.go/xorm.NewLRUCacher(xorm.NewMemoryStore(), 1000)
+3. 不用模板, 不查数据
