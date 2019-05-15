@@ -1,0 +1,91 @@
+bootstrap
+    bootstrap.go
+        SetupViews
+        SetupSessions
+        SetupWebsockets
+        SetupErrorHandlers
+        Configure
+        Bootstrap
+        Listen
+conf
+    db.go
+        DbConf
+        MasterDbConfig
+        SlaveDbConfig
+    sysconf.go
+        SysTimeform
+        SysTimeformShort
+dao
+    superstar_Dao.go(index)
+        SuperstarDao struct
+        NewSuperstarDao
+        Get()
+        GetAll()
+        Search()
+        Delete()
+        Update()
+        Create()
+datasource
+    dbhelper.go
+        InstanceMaster
+        InstanceSlave
+models
+    star_info.go
+        StarInfo
+services
+    superstar_service.go(admin)
+        SuperstarService struct
+        NewSuperstarService
+        GetAll()
+        Search()
+        Get()
+        Delete()
+        Update()
+        Create()
+web
+    controllers
+        admin.go
+            AdminController struct
+            Get()
+            GetEdit()
+            PostSave()
+            GetDelete()
+        index.go
+            IndexController struct
+            Get()
+            GetBy()
+            GetSearch()
+            GetClearcache()
+    middleware
+        identity
+            indentity.go
+        basicauth.go
+            map["admin"]"password"
+    public
+        css
+            bootstrap.min.css
+        js
+            bootstrap.min.js
+            jquery.min.js
+    routes
+        routes.go
+            Configure(/,/admin)
+    viewmodels
+        readme.md
+    views
+        admin
+            edit.html
+            index.html
+            layout.html
+        shared
+            error.html
+            layout.html
+        index.html
+        info.html
+    main.go(nodes)
+    main2.go(nodes)
+
+
+type S1 struct{}
+func new() *S1{}
+func S1.Methods()
